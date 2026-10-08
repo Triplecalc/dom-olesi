@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#EFE8DC" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Дом Олеси</title>
+  <meta name="description" content="Дом, который ты заслужила. От Глеба и Мирона." />
+  <script type="text/javascript" nonce="22c580b2d44e46daa0189abb477" src="//local.adguard.org?ts=1791451206515&amp;type=content-script&amp;dmn=chatgpt.com&amp;url=https%3A%2F%2Fchatgpt.com%2Fbackend-api%2Festuary%2Fcontent%3Fid%3Dfile_0000000041ac81f4aa20378f9337699f%26fn%3Dindex%25285%2529.html%26cd%3Dattachment%26ts%3D497625%26p%3Dfs%26cid%3D1%26sig%3D8b2daee5bccd76761cadb7c7c12e9240a40063e311d5c22fc4dc3d974bb30d93%26v%3D0&amp;app=chrome.exe&amp;css=2&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1&amp;stealth=1&amp;st-dnt"></script><script type="text/javascript" nonce="22c580b2d44e46daa0189abb477" src="//local.adguard.org?ts=1791451206515&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect rx='12' width='64' height='64' fill='%23EFE8DC'/%3E%3Cpath d='M12 34 L32 16 L52 34 V52 H12Z' fill='%237C8A6A'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <section id="gate" class="gate" data-screen="gate">
+    <div class="gate-inner">
+      <p class="eyebrow">тихий вход</p>
+      <h1 class="title">Дом Олеси</h1>
+      <p class="subtitle">43 · от Глеба и Мирона</p>
+      <p class="lead">Две двери. Два ключа. Дом откроется, когда сработают оба.</p>
+
+      <div class="doors">
+        <article class="door-card" id="door-miron" data-who="miron">
+          <div class="door-3d">
+            <div class="door-face">
+              <span class="plate">Мирон</span>
+              <span class="handle" aria-hidden="true"></span>
+            </div>
+          </div>
+          <form class="lock-form" data-who="miron" autocomplete="off">
+            <label for="answer-miron">Как ты называла Мирона в детстве?</label>
+            <input id="answer-miron" name="answer" type="text" inputmode="text" spellcheck="false" placeholder="ответ знает только мама" />
+            <button type="submit">Открыть дверь</button>
+            <p class="hint" hidden></p>
+          </form>
+        </article>
+
+        <article class="door-card" id="door-gleb" data-who="gleb">
+          <div class="door-3d">
+            <div class="door-face">
+              <span class="plate">Глеб</span>
+              <span class="handle" aria-hidden="true"></span>
+            </div>
+          </div>
+          <form class="lock-form" data-who="gleb" autocomplete="off">
+            <label for="answer-gleb">Как ты называла Глеба в детстве?</label>
+            <input id="answer-gleb" name="answer" type="text" inputmode="text" spellcheck="false" placeholder="ответ знает только мама" />
+            <button type="submit">Открыть дверь</button>
+            <p class="hint" hidden></p>
+          </form>
+        </article>
+      </div>
+
+      <p class="status" id="gate-status">Пока закрыто. Один сын — половина дома.</p>
+    </div>
+  </section>
+
+  <div id="house" class="house" hidden>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <strong>Дом Олеси</strong>
+          <small>43 · Глеб и Мирон</small>
+        </div>
+      </div>
+      <button class="music-btn" id="music-btn" type="button" aria-pressed="false">Музыка</button>
+    </header>
+
+    <nav class="nav" aria-label="Комнаты дома">
+      <button type="button" class="nav-btn is-active" data-room="prihozaya">Прихожая</button>
+      <button type="button" class="nav-btn" data-room="kuhnya">Кухня</button>
+      <button type="button" class="nav-btn" data-room="synovya">Сыновья</button>
+      <button type="button" class="nav-btn" data-room="sad">Сад</button>
+      <button type="button" class="nav-btn" data-room="zhiteli">Жители</button>
+    </nav>
+
+    <main class="rooms">
+      <section class="room is-active" id="room-prihozaya">
+        <div class="interior hall-room">
+          <div class="wall-rail" aria-hidden="true"></div>
+          <div class="picture-rail">
+            <figure class="wall-photo tilt-left"><img src="assets/photos/olesya-sad.jpg" alt="Олеся" /></figure>
+            <figure class="wall-photo"><img src="assets/photos/mina.jpg" alt="Мина" /></figure>
+            <figure class="wall-photo tilt-right"><img src="assets/photos/marsel.jpg" alt="Марсель" /></figure>
+          </div>
+          <div class="console">
+            <div class="vase" aria-hidden="true"></div>
+            <div class="story-card">
+              <p class="eyebrow">прихожая</p>
+              <h2>На тебе держалось гораздо больше, чем просто дом.</h2>
+              <p>Мы привыкли к этому настолько, что не всегда замечали: порядок, еда, разговоры, переживания, наши проблемы, наши возвращения домой — за очень многим стояла ты.</p>
+              <p>Не потому что тебе всегда было легко.</p>
+              <p>А потому что ты снова и снова выбирала нас.</p>
+              <p>Сегодня хочется хотя бы на один день поменяться местами: ничего не держи. Просто будь дома. Мы рядом.</p>
+            </div>
+            <div class="vase tall" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <section class="quote-block">
+          <p class="eyebrow">мамины цитаты</p>
+          <figure class="quote-card">
+            <blockquote>«Вся наша семья слегка придурковатая.»</blockquote>
+            <figcaption>— Олеся, однажды совершенно справедливо</figcaption>
+          </figure>
+          <p class="quote-note">Кажется, это одна из самых точных характеристик нашей семьи. И почему-то именно за это мы её любим.</p>
+        </section>
+
+        <section class="stats-block">
+          <p class="eyebrow">43 года — это...</p>
+          <ul class="stats">
+            <li><strong>43</strong><span>года</span></li>
+            <li><strong>2</strong><span>сына</span></li>
+            <li><strong>4</strong><span>кота</span></li>
+            <li><strong>1</strong><span>собака</span></li>
+            <li><strong>∞</strong><span>поводов переживать</span></li>
+          </ul>
+          <p class="stats-foot">И каким-то чудом ты всё ещё нас всех терпишь.</p>
+        </section>
+      </section>
+
+      <section class="room" id="room-kuhnya">
+        <div class="split">
+          <figure class="photo-frame">
+            <img src="assets/photos/mina.jpg" alt="Мина у своей миски" />
+            <figcaption>Мина дежурит у миски. Как обычно.</figcaption>
+          </figure>
+          <div class="prose">
+            <p class="eyebrow">кухня</p>
+            <h2>Её территория</h2>
+            <p>Здесь пахнет мантами и экспериментами. Здесь кого-то кормят раньше, чем успеют сказать «я не голодный». Здесь миски, кастрюли и вечная надежда, что после ужина на столе воцарится порядок.</p>
+            <p>Марсель смотрит так, будто дом принадлежит ему. Киза устраивается там, где удобно ей. Барон — где-то рядом, просто снова спрятался. Юля тоже из наших: ещё одна кошка, ещё один характер.</p>
+            <p class="note">Подпись не «мама готовит». Подпись: ты снова всех собрала за одним столом.</p>
+          </div>
+        </div>
+        <div class="gallery three">
+          <figure><img src="assets/photos/marsel.jpg" alt="Белый Марсель" /><figcaption>Марсель</figcaption></figure>
+          <figure><img src="assets/photos/kiza.jpg" alt="Трёхцветная Киза" /><figcaption>Киза</figcaption></figure>
+          <figure><img src="assets/photos/yulya.jpg" alt="Юля" /><figcaption>Юля</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="room" id="room-synovya">
+        <p class="eyebrow">комната сыновей</p>
+        <h2>Две половины одного дома</h2>
+        <div class="two-sons">
+          <article class="son-card">
+            <p class="son-name">Глеб</p>
+            <p>Мама, я люблю тебя без списка причин. За то, что ты осталась. За то, что резкость у тебя — не холод, а усталость человека, который слишком долго был за двоих. За то, что в глубине ты мягкая, даже когда дом требует быть железной.</p>
+            <p>Спасибо, что растила нас так, будто у нас всё равно будет хорошее будущее. Я хочу, чтобы ты в него верила до конца. Мы ценим тебя сильнее, чем получается сказать за ужином.</p>
+          </article>
+          <article class="son-card miron">
+            <p class="son-name">Мирон</p>
+            <p>Мама, спасибо, что ты есть. Что ты рядом, даже когда ворчишь. Что из тебя получается и строгость, и тепло — иногда в одну минуту.</p>
+            <p>Мы оба твои. Лысый персик и киндер сюрприз. Дом без тебя не складывается. Любим тебя. Очень.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="room" id="room-sad">
+        <div class="interior garden-room">
+          <div class="split reverse">
+            <figure class="photo-frame">
+              <img src="assets/photos/olesya-sad.jpg" alt="Олеся среди живых цветов и ловцов снов" />
+              <figcaption>Ты всегда выбирала живое.</figcaption>
+            </figure>
+            <div class="prose">
+              <p class="eyebrow">сад</p>
+              <h2>Окно в будущее</h2>
+              <p>Тебе всегда хотелось, чтобы вокруг было живое. Не просто красиво — по-настоящему живое: цветы на окне, зелень, свет, дом, в котором становится уютнее не сразу, а понемногу.</p>
+              <p>Наверное, поэтому этот сад здесь именно про тебя.</p>
+              <p>Про то, что даже когда многое не получается вовремя, всё равно можно что-то посадить, переделать, начать сначала. Можно мечтать о ремонте, о поездках, о более спокойной жизни — и не считать, что для этого уже поздно.</p>
+              <p>Ты слишком долго думала о том, как сделать лучше всем вокруг. Поэтому хочется, чтобы дальше в твоей жизни было больше вещей, которые будут просто для тебя.</p>
+              <p>Больше красоты. Больше воздуха. Больше дней, в которых не нужно всё тащить на себе.</p>
+              <p>Сегодня тебе 43. И впереди ещё очень много того, что может расцвести.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="room" id="room-zhiteli">
+        <p class="eyebrow">жители</p>
+        <h2>Маленькие, но важные</h2>
+        <p class="lead-inline">Собака Мина. Кошки Марсель, Барон, Юля и Киза. Барон снова где-то спрятался — это нормально. Он тоже домашний.</p>
+        <div class="gallery pets">
+          <figure><img src="assets/photos/mina.jpg" alt="Мина" /><figcaption>Мина</figcaption></figure>
+          <figure><img src="assets/photos/marsel.jpg" alt="Марсель" /><figcaption>Марсель</figcaption></figure>
+          <figure class="hidden-baron">
+            <img src="assets/photos/baron.jpg" alt="Барон" />
+            <figcaption>Барон</figcaption>
+          </figure>
+          <figure><img src="assets/photos/yulya-look.jpg" alt="Юля" /><figcaption>Юля</figcaption></figure>
+          <figure><img src="assets/photos/kiza.jpg" alt="Киза" /><figcaption>Киза</figcaption></figure>
+        </div>
+        <div class="finale">
+          <p>Мам, с днём рождения!</p>
+          <p class="finale-sub">Сегодня тебе 43.</p>
+          <p class="finale-text">А для нас ты всё та же мама, которой можно позвонить с абсолютно любой проблемой.</p>
+          <p class="finale-text">Мы тебя любим.</p>
+          <p class="finale-text">Даже эта слегка придурковатая семья ❤️</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <audio id="bg-music" loop preload="none">
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
